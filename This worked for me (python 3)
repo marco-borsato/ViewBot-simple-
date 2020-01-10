@@ -1,0 +1,14 @@
+import webbrowser
+import time
+import os
+
+print("Viewbot engaged")
+
+Current_Views = 0
+
+while Current_Views < 50:  # the 50 stands for the amount of views you want change it to your liking 
+    webbrowser.open("https://www.twitch.tv")  # you can change the URL to anything you want
+    time.sleep(float(10))  # the amount of time between
+    os.system("killall -9 'Google Chrome'")  # if you are on windows use os.system("taskkill /im chrome.exe /f") you
+    # could also remove this line if you dont mind your tabs being opend endlessly
+    Current_Views = Current_Views + 1
